@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>JS</title>
+	<style>
+		body {
+			background: url(https://i.pinimg.com/originals/1c/4d/50/1c4d50575fa149c25563d119a7a4e198.jpg) no-repeat;
+			background-size: cover;
+			font-size: 500%;
+			color:Black;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<button onclick="func()">Press me</button>
+	<p id="cat"></p>
+	<script type="text/javascript">
+	function func() {
+var ans;
+var result = confirm('Do you want to see a cat?');
+if (result == true){
+	ans = '<img src="https://mir24.tv/uploaded/images/2019/October/1efba0ca7e9634e8b05b0ab889aaaf3cf58c669ebd46a70f2dce4fe19a445a31.jpg" width="400px">';
+} else { ans = '<img src="https://peopletalk.ru/wp-content/uploads/2018/04/ggshshgshgsh.jpg" width="400px"><br><p>Ny i ladno</p>';}
+document.getElementById("cat").innerHTML = ans;
+}
+</script>
+</body>
+</html>
